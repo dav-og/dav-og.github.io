@@ -1,0 +1,10 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_EXPORT html
+---
+layout: default
+title: First Post 
+excerpt: 
+---
+#+END_EXPORT
+Hello, World!
