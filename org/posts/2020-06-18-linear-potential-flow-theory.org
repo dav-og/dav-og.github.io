@@ -34,7 +34,7 @@ and SPH.
 Frequency-domain linear potential flow solvers such as WAMIT and NEMOH
 (so-called 'boundary element method (BEM) codes') are well-established in the
 hydrodynamics field, and the foundation of most time-domain solvers. However,
-they are often treated as a black box. This article aims to elucidate some of
+they are often treated as a black box. This post aims to elucidate some of
 the underlying theory in a clear, succint manner. 
 
 * Fundamentals and main assumptions
@@ -210,7 +210,7 @@ the underlying theory in a clear, succint manner.
   \phi_D = \phi_0 + \phi_s
   \end{equation}
 
-  \phi_0 represents the incident wave potential and $\phi_s$ represents
+  $\phi_0$ represents the incident wave potential and $\phi_s$ represents
   the scattered wave potential.
 
 - Hence, Equation \ref{eq:potentialHydrodynamics} can be expressed in terms of
@@ -223,7 +223,7 @@ the underlying theory in a clear, succint manner.
 - $f_{ex}$ has two components: the Froude-Krylov force, $f_{FK}$ - associated
   with the undisturbed incident wave. And the scatter force, $f_s$, which
   results from waves interacting with the body and diffracting/scattering
-  across the free surface[fn::The scatter term, $f_{s}$ may be seen as a
+  across the free surface[fn::The scatter term, $f_{s}$ can be seen as a
   correction to the Froude-Krylov force, to account for body's presence.]. In
   the frequency-domain:
 
@@ -268,11 +268,11 @@ the underlying theory in a clear, succint manner.
 - The Green function, $G(\vec{\xi}, \vec{x})$, corresponds to the potential
   of an oscillatory source, located at the point $\vec{\xi}=\vec{x}$ (where
   $\vec{\xi}$ is the position vector of a point on the body's surface and
-  $\vec{x}$ is the position vector of a point within the fluid domain.
+  $\vec{x}$ is the position vector of a point within the fluid domain).
 
-- This equation can also be expressed in terms of the source distribution,
-  $\sigma$:
+# - This equation can also be expressed in terms of the source distribution,
+#   $\sigma$:
 
-  \begin{equation}
-  \phi = \int\int_{S_b} \sigma(y) G(x, y) dS(y)
-  \end{equation}
+#   \begin{equation}
+#   \phi = \int\int_{S_b} \sigma(y) G(x, y) dS(y)
+#   \end{equation}
